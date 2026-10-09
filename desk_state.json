@@ -17,15 +17,15 @@
   "dag": "2026-10-09",
   "dag_start": 1000.0,
   "gestopt": false,
-  "laatste_ronde": "2026-10-09 22:21 UTC",
+  "laatste_ronde": "2026-10-09 22:48 UTC",
   "waarde": 997.05,
   "fear_greed": "neutraal (59/100)",
   "laatste_besluiten": [
     {
       "munt": "BTC/USD",
-      "prijs": 82464.9,
+      "prijs": 82555.1,
       "regime": "TREND_OP",
-      "rsi": 55.9,
+      "rsi": 62.3,
       "grok": -1,
       "grok_reden": "Grote ETF-uitstromen (~$730M in twee dagen), $1B+ liquidaties (vooral longs) en dip tot $80k plus overheidsverplaatsingen van BTC; X toont voorzichtigheid, geen extreme paniek.",
       "sentiment": -1,
@@ -36,9 +36,9 @@
     },
     {
       "munt": "ETH/USD",
-      "prijs": 2481.61,
+      "prijs": 2487.58,
       "regime": "TREND_NEER",
-      "rsi": 50.4,
+      "rsi": 61.8,
       "grok": -1,
       "grok_reden": "Relatief zwaardere liquidaties ($356M, 6x BTC-rate), aanhoudende ETF-uitstromen (8 dagen) en grotere prijsdaling; X mix van buy-the-dip en afwachten, geen euforie.",
       "sentiment": -1,
@@ -49,9 +49,9 @@
     },
     {
       "munt": "SOL/USD",
-      "prijs": 108.87,
+      "prijs": 109.24,
       "regime": "TREND_NEER",
-      "rsi": 40.6,
+      "rsi": 53.3,
       "grok": 0,
       "grok_reden": "Positief nieuws (Samsung-integratie 82M devices, record 1.88M adressen, 200ms-upgrade) maar prijs daalt met markt en kleine ETF-uitstromen; X gemengd, geen extreem sentiment.",
       "sentiment": 0,
@@ -62,9 +62,9 @@
     }
   ],
   "prijzen": {
-    "BTC/USD": 82464.9,
-    "ETH/USD": 2481.61,
-    "SOL/USD": 108.87
+    "BTC/USD": 82555.1,
+    "ETH/USD": 2487.58,
+    "SOL/USD": 109.24
   },
   "historie": [
     {
@@ -109,6 +109,10 @@
     },
     {
       "tijd": "2026-10-09 22:21 UTC",
+      "waarde": 997.05
+    },
+    {
+      "tijd": "2026-10-09 22:48 UTC",
       "waarde": 997.05
     }
   ],
