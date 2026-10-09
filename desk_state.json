@@ -15,15 +15,15 @@
   "dag": "2026-10-09",
   "dag_start": 1000.0,
   "gestopt": false,
-  "laatste_ronde": "2026-10-09 18:25 UTC",
-  "waarde": 998.26,
+  "laatste_ronde": "2026-10-09 18:53 UTC",
+  "waarde": 998.1,
   "fear_greed": "neutraal (59/100)",
   "laatste_besluiten": [
     {
       "munt": "BTC/USD",
-      "prijs": 82492.5,
+      "prijs": 82439.7,
       "regime": "ZIJWAARTS",
-      "rsi": 28.7,
+      "rsi": 30.0,
       "grok": 0,
       "grok_reden": "Grote ETF-uitstromen en $1 miljard liquidaties na dip tot $80k, rebound zonder extreme paniek of euforie op X.",
       "sentiment": 0,
@@ -34,9 +34,9 @@
     },
     {
       "munt": "ETH/USD",
-      "prijs": 2483.36,
+      "prijs": 2483.21,
       "regime": "TREND_NEER",
-      "rsi": 44.0,
+      "rsi": 48.1,
       "grok": 0,
       "grok_reden": "Meer liquidaties dan BTC plus aanhoudende ETF-uitstromen, prijs lager maar sentiment neutraal zonder paniek.",
       "sentiment": 0,
@@ -47,9 +47,9 @@
     },
     {
       "munt": "SOL/USD",
-      "prijs": 109.54,
+      "prijs": 109.48,
       "regime": "TREND_NEER",
-      "rsi": 42.4,
+      "rsi": 52.3,
       "grok": 0,
       "grok_reden": "Positief Samsung-partnerschap en hoge netwerkactiviteit, maar prijs volgt markt omlaag zonder euforie.",
       "sentiment": 0,
@@ -60,9 +60,9 @@
     }
   ],
   "prijzen": {
-    "BTC/USD": 82492.5,
-    "ETH/USD": 2483.36,
-    "SOL/USD": 109.54
+    "BTC/USD": 82439.7,
+    "ETH/USD": 2483.21,
+    "SOL/USD": 109.48
   },
   "historie": [
     {
@@ -76,6 +76,10 @@
     {
       "tijd": "2026-10-09 18:25 UTC",
       "waarde": 998.26
+    },
+    {
+      "tijd": "2026-10-09 18:53 UTC",
+      "waarde": 998.1
     }
   ],
   "grok_cache": {
