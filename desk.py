@@ -1,4 +1,4 @@
-# desk.py — 6-bot crypto trading desk (papiergeld), draait elk uur via GitHub Actions
+# desk.py — 6-bot crypto trading desk (papiergeld), draait elk kwartier via GitHub Actions
 # Geheimen komen uit GitHub Secrets: XAI_API_KEY (Grok) en NTFY_TOPIC (meldingen)
 
 import json, os, re, datetime as dt
@@ -10,6 +10,8 @@ NTFY_TOPIC = os.environ.get("NTFY_TOPIC", "")
 
 # ⚙️ INSTELLINGEN — hier kun je aan draaien
 MUNTEN           = ["BTC/USD", "ETH/USD", "SOL/USD"]
+TIMEFRAME        = "15m"  # kwartierkaarsen (was "1h")
+GROK_ELKE_MIN    = 60     # Grok zoekt maar 1x per uur, om tegoed te sparen
 START_KAPITAAL   = 1000.0
 RISICO_PER_TRADE = 0.01   # max 1% van je kapitaal verliezen per trade
 MAX_POSITIE      = 0.25   # nooit meer dan 25% van je kapitaal in één munt
@@ -36,7 +38,7 @@ def bewaar_state(s):
         json.dump(s, f, indent=2)
 
 def haal_data(munt):
-    data = exchange.fetch_ohlcv(munt, timeframe="1h", limit=300)
+    data = exchange.fetch_ohlcv(munt, timeframe=TIMEFRAME, limit=300)
     return pd.DataFrame(data, columns=["tijd", "open", "high", "low", "close", "volume"])
 
 def portefeuillewaarde(s, prijzen):
@@ -55,7 +57,7 @@ def marktanalist(df):
          "ma50": c.rolling(50).mean().iloc[-1],
          "ma200": c.rolling(200).mean().iloc[-1],
          "rsi": rsi.iloc[-1],
-         "atr": tr.rolling(14).mean().iloc[-1]}   # gemiddelde beweging per uur
+         "atr": tr.rolling(14).mean().iloc[-1]}   # gemiddelde beweging per kaars
     if a["prijs"] > a["ma200"] and a["ma50"] > a["ma200"]:
         a["regime"] = "TREND_OP"
     elif a["prijs"] < a["ma200"] and a["ma50"] < a["ma200"]:
@@ -99,23 +101,6 @@ def vraag_grok():
         d = data.get(m, {})
         uitkomst[m] = (max(-1, min(1, int(d.get("score", 0)))), d.get("reden", "geen info"))
     return uitkomst
-
-
-def sentiment_bot():
-    fg_score, fg_uitleg = fear_greed()
-    print(f"🧠 Fear & Greed: {fg_uitleg}")
-    try:
-        g = vraag_grok()
-    except Exception as e:
-        # Geen data = neutraal. Grok mag nooit gokken zonder te zoeken.
-        print(f"⚠️ Grok gaf geen bruikbaar antwoord ({type(e).__name__}: {str(e)[:120]}) → neutraal")
-        g = {m: (0, "geen data") for m in MUNTEN}
-    uit = {}
-    for m in MUNTEN:
-        score, reden = g[m]
-        uit[m] = max(-1, min(1, fg_score + score))
-        print(f"   🐦 Grok over {m}: {score:+d} — {reden}")
-    return uit
 
 
 # 🤖 BOT 3 — Head trader: kiest strategie per regime + hoe overtuigd hij is
@@ -214,15 +199,27 @@ def meld(titel, tekst):
 
 
 # ---------- één handelsronde ----------
-def sentiment_met_redenen():
-    fg_score, fg_uitleg = fear_greed()
-    print(f"🧠 Fear & Greed: {fg_uitleg}")
+def grok_met_cache(s):
+    """Vraagt Grok hooguit 1x per GROK_ELKE_MIN minuten; daartussen wordt zijn laatste oordeel hergebruikt."""
+    nu = dt.datetime.now(dt.timezone.utc)
+    c = s.get("grok_cache")
+    if c and (nu - dt.datetime.fromisoformat(c["tijd"])).total_seconds() < GROK_ELKE_MIN * 60:
+        print(f"🐦 Grok-oordeel van {c['tijd'][11:16]} UTC wordt hergebruikt")
+        return {m: tuple(c["data"].get(m, (0, "geen data"))) for m in MUNTEN}
     try:
         g = vraag_grok()
+        s["grok_cache"] = {"tijd": nu.isoformat(), "data": g}
+        return g
     except Exception as e:
-        # Geen data = neutraal. Grok mag nooit gokken zonder te zoeken.
+        # Geen data = neutraal. Grok mag nooit gokken zonder te zoeken. Volgende ronde opnieuw proberen.
         print(f"⚠️ Grok gaf geen bruikbaar antwoord ({type(e).__name__}: {str(e)[:120]}) → neutraal")
-        g = {m: (0, "geen data") for m in MUNTEN}
+        return {m: (0, "geen data") for m in MUNTEN}
+
+
+def sentiment_met_redenen(s):
+    fg_score, fg_uitleg = fear_greed()
+    print(f"🧠 Fear & Greed: {fg_uitleg}")
+    g = grok_met_cache(s)
     for m in MUNTEN:
         print(f"   🐦 Grok over {m}: {g[m][0]:+d} — {g[m][1]}")
     return fg_uitleg, {m: (max(-1, min(1, fg_score + g[m][0])), g[m][0], g[m][1]) for m in MUNTEN}
@@ -242,7 +239,7 @@ def draai_desk():
         s["gestopt"] = True
         meld("🚨 NOODKNOP", f"Desk staat {NOODKNOP:.0%} onder de top (${waarde:,.2f}). Alles wordt verkocht.")
 
-    fg_uitleg, sentimenten = sentiment_met_redenen()
+    fg_uitleg, sentimenten = sentiment_met_redenen(s)
     print()
 
     besluiten = []
@@ -271,50 +268,7 @@ def draai_desk():
     s["laatste_besluiten"] = besluiten
     s["prijzen"] = {m: round(p, 2) for m, p in prijzen.items()}
     s.setdefault("historie", []).append({"tijd": s["laatste_ronde"], "waarde": s["waarde"]})
-    s["historie"] = s["historie"][-2000:]
-    reviewer(s, waarde)
-    bewaar_state(s)
-
-
-if __name__ == "__main__":
-    try:
-        draai_desk()
-    except Exception as e:
-        meld("⚠️ Desk-fout", f"{type(e).__name__}: {str(e)[:200]}")
-        raise
-def draai_desk():
-    s = laad_state()
-    data = {m: marktanalist(haal_data(m)) for m in MUNTEN}
-    prijzen = {m: a["prijs"] for m, a in data.items()}
-    waarde = portefeuillewaarde(s, prijzen)
-
-    vandaag = dt.date.today().isoformat()
-    if s["dag"] != vandaag:
-        s["dag"], s["dag_start"] = vandaag, waarde
-    s["piek"] = max(s["piek"], waarde)
-    if waarde < s["piek"] * (1 - NOODKNOP) and not s["gestopt"]:
-        s["gestopt"] = True
-        meld("🚨 NOODKNOP", f"Desk staat {NOODKNOP:.0%} onder de top (${waarde:,.2f}). Alles wordt verkocht.")
-
-    sentimenten = sentiment_bot()
-    print()
-
-    for munt, a in data.items():
-        voorstel, overtuiging, uitleg = head_trader(munt, a, sentimenten[munt], s)
-        besluit, aantal, stop, reden = risicomanager(munt, voorstel, overtuiging, a, s, waarde)
-        uitvoerder(munt, besluit, aantal, stop, a, s, reden if besluit == "VERKOOP" else uitleg)
-        print(f"{munt} [{a['regime']}] ${a['prijs']:,.2f} RSI {a['rsi']:.0f} | sentiment {sentimenten[munt]:+d}")
-        print(f"   trader: {voorstel} ({uitleg}) → risk: {besluit} ({reden})")
-        if besluit == "KOOP":
-            meld(f"🟢 KOOP {munt}", f"${aantal * a['prijs']:,.2f} op ${a['prijs']:,.2f} — {uitleg}. Stop ${stop:,.2f}")
-        elif besluit == "VERKOOP":
-            t = s["journaal"][-1]
-            meld(f"{'✅' if t['winst'] > 0 else '🔴'} VERKOOP {munt}",
-                 f"op ${t['uitstap']:,.2f} — {reden}. Resultaat ${t['winst']:+,.2f}")
-
-    waarde = portefeuillewaarde(s, prijzen)
-    s["laatste_ronde"] = dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
-    s["waarde"] = round(waarde, 2)
+    s["historie"] = s["historie"][-3000:]   # ongeveer een maand aan kwartieren
     reviewer(s, waarde)
     bewaar_state(s)
 
