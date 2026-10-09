@@ -6,6 +6,59 @@
   "dag": "2026-10-09",
   "dag_start": 1000.0,
   "gestopt": false,
-  "laatste_ronde": "2026-10-09 16:35 UTC",
-  "waarde": 1000.0
+  "laatste_ronde": "2026-10-09 17:25 UTC",
+  "waarde": 1000.0,
+  "fear_greed": "neutraal (59/100)",
+  "laatste_besluiten": [
+    {
+      "munt": "BTC/USD",
+      "prijs": 82456.1,
+      "regime": "TREND_NEER",
+      "rsi": 51.7,
+      "grok": 0,
+      "grok_reden": "Grote ETF-uitstromen en $1B+ liquidaties na dip naar $80k, maar herstel tot ~$82k. US-overheid verplaatst BTC zonder verkoop. Geen extreme paniek of euforie op X.",
+      "sentiment": 0,
+      "trader": "WACHT",
+      "trader_reden": "geen signaal",
+      "besluit": "WACHT",
+      "risk_reden": "akkoord"
+    },
+    {
+      "munt": "ETH/USD",
+      "prijs": 2481.73,
+      "regime": "TREND_NEER",
+      "rsi": 44.6,
+      "grok": 0,
+      "grok_reden": "Langere ETF-uitstroomreeks en relatief hogere liquidaties, prijsdaling. Geen duidelijk extreem nieuws of stemming op X.",
+      "sentiment": 0,
+      "trader": "WACHT",
+      "trader_reden": "geen signaal",
+      "besluit": "WACHT",
+      "risk_reden": "akkoord"
+    },
+    {
+      "munt": "SOL/USD",
+      "prijs": 109.3,
+      "regime": "TREND_NEER",
+      "rsi": 42.2,
+      "grok": 0,
+      "grok_reden": "Positief ecosysteemniews (Samsung, upgrade, record adressen, tokenisatie), kleine ETF-uitstromen. Prijs volgt markt, geen euforie of paniek.",
+      "sentiment": 0,
+      "trader": "WACHT",
+      "trader_reden": "geen signaal",
+      "besluit": "WACHT",
+      "risk_reden": "akkoord"
+    }
+  ],
+  "prijzen": {
+    "BTC/USD": 82456.1,
+    "ETH/USD": 2481.73,
+    "SOL/USD": 109.3
+  },
+  "historie": [
+    {
+      "tijd": "2026-10-09 17:24 UTC",
+      "waarde": 1000.0
+    }
+  ]
 }
