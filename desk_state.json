@@ -15,15 +15,15 @@
   "dag": "2026-10-09",
   "dag_start": 1000.0,
   "gestopt": false,
-  "laatste_ronde": "2026-10-09 20:20 UTC",
-  "waarde": 997.75,
+  "laatste_ronde": "2026-10-09 20:49 UTC",
+  "waarde": 998.04,
   "fear_greed": "neutraal (59/100)",
   "laatste_besluiten": [
     {
       "munt": "BTC/USD",
-      "prijs": 82324.0,
+      "prijs": 82418.7,
       "regime": "ZIJWAARTS",
-      "rsi": 29.0,
+      "rsi": 37.8,
       "grok": 0,
       "grok_reden": "Grote ETF-uitstromen ($730M) en overheid verplaatst $1,5B BTC plus $1B liquidaties, maar rebound boven $82k en geen extreme paniek of euforie op X.",
       "sentiment": 0,
@@ -34,9 +34,9 @@
     },
     {
       "munt": "ETH/USD",
-      "prijs": 2477.18,
+      "prijs": 2479.42,
       "regime": "TREND_NEER",
-      "rsi": 31.2,
+      "rsi": 38.6,
       "grok": 0,
       "grok_reden": "Acht dagen ETF-uitstromen en relatief meer liquidaties dan BTC, prijs lager, maar rebound en geen extreme stemming.",
       "sentiment": 0,
@@ -47,9 +47,9 @@
     },
     {
       "munt": "SOL/USD",
-      "prijs": 108.96,
+      "prijs": 108.89,
       "regime": "TREND_NEER",
-      "rsi": 38.3,
+      "rsi": 38.2,
       "grok": 0,
       "grok_reden": "Positief nieuws (Samsung USDC, tokenized stocks, record activiteit) maar volgt markt omlaag met ETF-uitstromen, geen duidelijke euforie of paniek.",
       "sentiment": 0,
@@ -60,9 +60,9 @@
     }
   ],
   "prijzen": {
-    "BTC/USD": 82324.0,
-    "ETH/USD": 2477.18,
-    "SOL/USD": 108.96
+    "BTC/USD": 82418.7,
+    "ETH/USD": 2479.42,
+    "SOL/USD": 108.89
   },
   "historie": [
     {
@@ -92,6 +92,10 @@
     {
       "tijd": "2026-10-09 20:20 UTC",
       "waarde": 997.75
+    },
+    {
+      "tijd": "2026-10-09 20:49 UTC",
+      "waarde": 998.04
     }
   ],
   "grok_cache": {
