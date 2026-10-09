@@ -1,0 +1,34 @@
+name: crypto-desk
+
+on:
+  schedule:
+    - cron: "7 * * * *"   # elk uur, 7 minuten over het hele uur
+  workflow_dispatch:       # knop om hem zelf te starten
+
+permissions:
+  contents: write          # nodig om het geheugen (desk_state.json) op te slaan
+
+concurrency: crypto-desk   # nooit twee rondes tegelijk
+
+jobs:
+  ronde:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Handelsronde
+        run: python desk.py
+        env:
+          XAI_API_KEY: ${{ secrets.XAI_API_KEY }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+      - name: Geheugen bewaren
+        run: |
+          git config user.name "crypto-desk"
+          git config user.email "crypto-desk@users.noreply.github.com"
+          git add desk_state.json
+          git commit -m "Desk-ronde $(date -u +%H:%M)" || echo "niets veranderd"
+          git push
