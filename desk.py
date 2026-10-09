@@ -214,6 +214,74 @@ def meld(titel, tekst):
 
 
 # ---------- één handelsronde ----------
+def sentiment_met_redenen():
+    fg_score, fg_uitleg = fear_greed()
+    print(f"🧠 Fear & Greed: {fg_uitleg}")
+    try:
+        g = vraag_grok()
+    except Exception as e:
+        # Geen data = neutraal. Grok mag nooit gokken zonder te zoeken.
+        print(f"⚠️ Grok gaf geen bruikbaar antwoord ({type(e).__name__}: {str(e)[:120]}) → neutraal")
+        g = {m: (0, "geen data") for m in MUNTEN}
+    for m in MUNTEN:
+        print(f"   🐦 Grok over {m}: {g[m][0]:+d} — {g[m][1]}")
+    return fg_uitleg, {m: (max(-1, min(1, fg_score + g[m][0])), g[m][0], g[m][1]) for m in MUNTEN}
+
+
+def draai_desk():
+    s = laad_state()
+    data = {m: marktanalist(haal_data(m)) for m in MUNTEN}
+    prijzen = {m: a["prijs"] for m, a in data.items()}
+    waarde = portefeuillewaarde(s, prijzen)
+
+    vandaag = dt.date.today().isoformat()
+    if s["dag"] != vandaag:
+        s["dag"], s["dag_start"] = vandaag, waarde
+    s["piek"] = max(s["piek"], waarde)
+    if waarde < s["piek"] * (1 - NOODKNOP) and not s["gestopt"]:
+        s["gestopt"] = True
+        meld("🚨 NOODKNOP", f"Desk staat {NOODKNOP:.0%} onder de top (${waarde:,.2f}). Alles wordt verkocht.")
+
+    fg_uitleg, sentimenten = sentiment_met_redenen()
+    print()
+
+    besluiten = []
+    for munt, a in data.items():
+        sent, grok_score, grok_reden = sentimenten[munt]
+        voorstel, overtuiging, uitleg = head_trader(munt, a, sent, s)
+        besluit, aantal, stop, reden = risicomanager(munt, voorstel, overtuiging, a, s, waarde)
+        uitvoerder(munt, besluit, aantal, stop, a, s, reden if besluit == "VERKOOP" else uitleg)
+        print(f"{munt} [{a['regime']}] ${a['prijs']:,.2f} RSI {a['rsi']:.0f} | sentiment {sent:+d}")
+        print(f"   trader: {voorstel} ({uitleg}) → risk: {besluit} ({reden})")
+        besluiten.append({"munt": munt, "prijs": round(a["prijs"], 2), "regime": a["regime"],
+                          "rsi": round(float(a["rsi"]), 1), "grok": grok_score, "grok_reden": grok_reden,
+                          "sentiment": sent, "trader": voorstel, "trader_reden": uitleg,
+                          "besluit": besluit, "risk_reden": reden})
+        if besluit == "KOOP":
+            meld(f"🟢 KOOP {munt}", f"${aantal * a['prijs']:,.2f} op ${a['prijs']:,.2f} — {uitleg}. Stop ${stop:,.2f}")
+        elif besluit == "VERKOOP":
+            t = s["journaal"][-1]
+            meld(f"{'✅' if t['winst'] > 0 else '🔴'} VERKOOP {munt}",
+                 f"op ${t['uitstap']:,.2f} — {reden}. Resultaat ${t['winst']:+,.2f}")
+
+    waarde = portefeuillewaarde(s, prijzen)
+    s["laatste_ronde"] = dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    s["waarde"] = round(waarde, 2)
+    s["fear_greed"] = fg_uitleg
+    s["laatste_besluiten"] = besluiten
+    s["prijzen"] = {m: round(p, 2) for m, p in prijzen.items()}
+    s.setdefault("historie", []).append({"tijd": s["laatste_ronde"], "waarde": s["waarde"]})
+    s["historie"] = s["historie"][-2000:]
+    reviewer(s, waarde)
+    bewaar_state(s)
+
+
+if __name__ == "__main__":
+    try:
+        draai_desk()
+    except Exception as e:
+        meld("⚠️ Desk-fout", f"{type(e).__name__}: {str(e)[:200]}")
+        raise
 def draai_desk():
     s = laad_state()
     data = {m: marktanalist(haal_data(m)) for m in MUNTEN}
