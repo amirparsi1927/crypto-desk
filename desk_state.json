@@ -26,15 +26,15 @@
   "dag": "2026-10-10",
   "dag_start": 997.0485670350304,
   "gestopt": false,
-  "laatste_ronde": "2026-10-10 05:19 UTC",
-  "waarde": 996.11,
+  "laatste_ronde": "2026-10-10 05:47 UTC",
+  "waarde": 996.41,
   "fear_greed": "neutraal (64/100)",
   "laatste_besluiten": [
     {
       "munt": "BTC/USD",
-      "prijs": 82615.3,
+      "prijs": 82714.8,
       "regime": "TREND_OP",
-      "rsi": 48.9,
+      "rsi": 66.0,
       "grok": 0,
       "grok_reden": "Dip naar $80k met $1 miljard liquidaties en grote ETF-uitstromen, gevolgd door herstel; X toont voorzichtigheid zonder extreme paniek of euforie.",
       "sentiment": 0,
@@ -45,9 +45,9 @@
     },
     {
       "munt": "ETH/USD",
-      "prijs": 2492.95,
+      "prijs": 2495.08,
       "regime": "TREND_NEER",
-      "rsi": 48.8,
+      "rsi": 60.2,
       "grok": 0,
       "grok_reden": "Sterkere daling en relatief hogere liquidaties plus ETF-uitstromen; vergelijkbaar marktbeeld als BTC, geen extreme stemming op X.",
       "sentiment": 0,
@@ -58,9 +58,9 @@
     },
     {
       "munt": "SOL/USD",
-      "prijs": 109.86,
+      "prijs": 110.11,
       "regime": "TREND_NEER",
-      "rsi": 50.3,
+      "rsi": 64.6,
       "grok": 0,
       "grok_reden": "Prijsdaling met de markt en ETF-uitstromen, maar positieve netwerkupgrade naar 200ms slots en hoge activiteit; X vooral positief over tech.",
       "sentiment": 0,
@@ -71,9 +71,9 @@
     }
   ],
   "prijzen": {
-    "BTC/USD": 82615.3,
-    "ETH/USD": 2492.95,
-    "SOL/USD": 109.86
+    "BTC/USD": 82714.8,
+    "ETH/USD": 2495.08,
+    "SOL/USD": 110.11
   },
   "historie": [
     {
@@ -179,6 +179,10 @@
     {
       "tijd": "2026-10-10 05:19 UTC",
       "waarde": 996.11
+    },
+    {
+      "tijd": "2026-10-10 05:47 UTC",
+      "waarde": 996.41
     }
   ],
   "grok_cache": {
