@@ -17,15 +17,15 @@
   "dag": "2026-10-10",
   "dag_start": 997.0485670350304,
   "gestopt": false,
-  "laatste_ronde": "2026-10-10 01:35 UTC",
+  "laatste_ronde": "2026-10-10 01:59 UTC",
   "waarde": 997.05,
   "fear_greed": "neutraal (64/100)",
   "laatste_besluiten": [
     {
       "munt": "BTC/USD",
-      "prijs": 82533.8,
+      "prijs": 82624.5,
       "regime": "TREND_OP",
-      "rsi": 64.3,
+      "rsi": 66.3,
       "grok": 0,
       "grok_reden": "ETF-uitstromen van honderden miljoenen en US-overheid verplaatst grote BTC-hoeveelheden naar exchanges, deels herstel na Trump-commentaar; X niet extreem paniekerig of euforisch.",
       "sentiment": 0,
@@ -36,9 +36,9 @@
     },
     {
       "munt": "ETH/USD",
-      "prijs": 2489.09,
+      "prijs": 2493.57,
       "regime": "TREND_NEER",
-      "rsi": 72.6,
+      "rsi": 70.9,
       "grok": 0,
       "grok_reden": "Vergelijkbare ETF-uitstromen en relatief hoge liquidaties, prijsdaling; X-sentiment voorzichtig maar geen extreme paniek.",
       "sentiment": 0,
@@ -49,9 +49,9 @@
     },
     {
       "munt": "SOL/USD",
-      "prijs": 109.45,
+      "prijs": 109.89,
       "regime": "TREND_NEER",
-      "rsi": 71.1,
+      "rsi": 71.8,
       "grok": 0,
       "grok_reden": "Positieve ontwikkelingen zoals 200ms-upgrade, hoge activiteit en tokenisatie, maar prijs daalde mee met markt; geen extreme stemming op X.",
       "sentiment": 0,
@@ -62,9 +62,9 @@
     }
   ],
   "prijzen": {
-    "BTC/USD": 82533.8,
-    "ETH/USD": 2489.09,
-    "SOL/USD": 109.45
+    "BTC/USD": 82624.5,
+    "ETH/USD": 2493.57,
+    "SOL/USD": 109.89
   },
   "historie": [
     {
@@ -137,6 +137,10 @@
     },
     {
       "tijd": "2026-10-10 01:35 UTC",
+      "waarde": 997.05
+    },
+    {
+      "tijd": "2026-10-10 01:59 UTC",
       "waarde": 997.05
     }
   ],
