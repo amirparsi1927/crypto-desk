@@ -26,30 +26,30 @@
   "dag": "2026-10-10",
   "dag_start": 997.0485670350304,
   "gestopt": false,
-  "laatste_ronde": "2026-10-10 03:19 UTC",
+  "laatste_ronde": "2026-10-10 03:51 UTC",
   "waarde": 995.8,
   "fear_greed": "neutraal (64/100)",
   "laatste_besluiten": [
     {
       "munt": "BTC/USD",
-      "prijs": 82513.2,
+      "prijs": 82514.4,
       "regime": "TREND_OP",
-      "rsi": 45.1,
+      "rsi": 48.1,
       "grok": -1,
-      "grok_reden": "Grote ETF-uitstromen van ~730 miljoen dollar in twee dagen, ruim 1 miljard dollar liquidaties (vooral longs) en dip tot 80.350 dollar.",
+      "grok_reden": "Grote ETF-uitstromen van $729M in twee dagen, $1B+ long-liquidaties en overheidsverplaatsingen van BTC naar exchanges wijzen op duidelijke verkoopdruk.",
       "sentiment": -1,
-      "trader": "KOOP",
-      "trader_reden": "meegaan met trend omhoog",
-      "besluit": "KOOP",
-      "risk_reden": "akkoord: $249.26, stop $82,374.37"
+      "trader": "WACHT",
+      "trader_reden": "geen signaal",
+      "besluit": "WACHT",
+      "risk_reden": "akkoord"
     },
     {
       "munt": "ETH/USD",
-      "prijs": 2490.67,
+      "prijs": 2489.04,
       "regime": "TREND_NEER",
-      "rsi": 64.7,
+      "rsi": 53.8,
       "grok": -1,
-      "grok_reden": "Achtste opeenvolgende dag ETF-uitstromen, relatief veel meer liquidaties dan BTC en duidelijkere prijsdaling.",
+      "grok_reden": "Zwaardere liquidaties dan BTC ($356M vs $298M), aanhoudende ETF-uitstromen en grotere prijsdaling maken het duidelijk negatief.",
       "sentiment": -1,
       "trader": "WACHT",
       "trader_reden": "geen signaal",
@@ -58,11 +58,11 @@
     },
     {
       "munt": "SOL/USD",
-      "prijs": 109.67,
+      "prijs": 109.63,
       "regime": "TREND_NEER",
-      "rsi": 69.6,
+      "rsi": 63.5,
       "grok": 0,
-      "grok_reden": "Prijs daalt mee met de markt en ETF-uitstromen, maar tegelijk positief nieuws over netwerk-upgrade (200ms slots) en adoptie; geen extreem X-sentiment.",
+      "grok_reden": "Prijsdaling en liquidaties, maar gemengd door positief nieuws over tokenized US-aandelen op Solana en 200ms-upgrade.",
       "sentiment": 0,
       "trader": "WACHT",
       "trader_reden": "geen signaal",
@@ -71,9 +71,9 @@
     }
   ],
   "prijzen": {
-    "BTC/USD": 82513.2,
-    "ETH/USD": 2490.67,
-    "SOL/USD": 109.67
+    "BTC/USD": 82514.4,
+    "ETH/USD": 2489.04,
+    "SOL/USD": 109.63
   },
   "historie": [
     {
@@ -163,22 +163,26 @@
     {
       "tijd": "2026-10-10 03:19 UTC",
       "waarde": 995.8
+    },
+    {
+      "tijd": "2026-10-10 03:51 UTC",
+      "waarde": 995.8
     }
   ],
   "grok_cache": {
-    "tijd": "2026-10-10T02:21:48.021321+00:00",
+    "tijd": "2026-10-10T03:49:56.217291+00:00",
     "data": {
       "BTC/USD": [
         -1,
-        "Grote ETF-uitstromen van ~730 miljoen dollar in twee dagen, ruim 1 miljard dollar liquidaties (vooral longs) en dip tot 80.350 dollar."
+        "Grote ETF-uitstromen van $729M in twee dagen, $1B+ long-liquidaties en overheidsverplaatsingen van BTC naar exchanges wijzen op duidelijke verkoopdruk."
       ],
       "ETH/USD": [
         -1,
-        "Achtste opeenvolgende dag ETF-uitstromen, relatief veel meer liquidaties dan BTC en duidelijkere prijsdaling."
+        "Zwaardere liquidaties dan BTC ($356M vs $298M), aanhoudende ETF-uitstromen en grotere prijsdaling maken het duidelijk negatief."
       ],
       "SOL/USD": [
         0,
-        "Prijs daalt mee met de markt en ETF-uitstromen, maar tegelijk positief nieuws over netwerk-upgrade (200ms slots) en adoptie; geen extreem X-sentiment."
+        "Prijsdaling en liquidaties, maar gemengd door positief nieuws over tokenized US-aandelen op Solana en 200ms-upgrade."
       ]
     }
   }
