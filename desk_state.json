@@ -17,15 +17,15 @@
   "dag": "2026-10-10",
   "dag_start": 997.0485670350304,
   "gestopt": false,
-  "laatste_ronde": "2026-10-10 00:01 UTC",
+  "laatste_ronde": "2026-10-10 00:34 UTC",
   "waarde": 997.05,
   "fear_greed": "neutraal (64/100)",
   "laatste_besluiten": [
     {
       "munt": "BTC/USD",
-      "prijs": 82534.7,
+      "prijs": 82502.8,
       "regime": "TREND_OP",
-      "rsi": 66.8,
+      "rsi": 49.9,
       "grok": 0,
       "grok_reden": "ETF-uitstromen, $1B+ liquidaties en US-gov BTC-verplaatsing drukken, dip naar $80k herstelde deels; X-sentiment koel/neutraal, geen extreme paniek of euforie",
       "sentiment": 0,
@@ -36,9 +36,9 @@
     },
     {
       "munt": "ETH/USD",
-      "prijs": 2485.22,
+      "prijs": 2486.59,
       "regime": "TREND_NEER",
-      "rsi": 66.6,
+      "rsi": 59.9,
       "grok": 0,
       "grok_reden": "Vergelijkbare druk met extra liquidaties en 8 dagen ETF-outflows, prijs rond $2490; X noemt 'broken' maar ook kansen, geen extreem",
       "sentiment": 0,
@@ -49,9 +49,9 @@
     },
     {
       "munt": "SOL/USD",
-      "prijs": 109.0,
+      "prijs": 109.16,
       "regime": "TREND_NEER",
-      "rsi": 56.7,
+      "rsi": 53.8,
       "grok": 0,
       "grok_reden": "Prijs daalt met markt ondanks adoptie (Samsung, tokenized stocks, 1.88M adressen, 200ms upgrade); X toont dip-koop, niet extreem",
       "sentiment": 0,
@@ -62,9 +62,9 @@
     }
   ],
   "prijzen": {
-    "BTC/USD": 82534.7,
-    "ETH/USD": 2485.22,
-    "SOL/USD": 109.0
+    "BTC/USD": 82502.8,
+    "ETH/USD": 2486.59,
+    "SOL/USD": 109.16
   },
   "historie": [
     {
@@ -125,6 +125,10 @@
     },
     {
       "tijd": "2026-10-10 00:01 UTC",
+      "waarde": 997.05
+    },
+    {
+      "tijd": "2026-10-10 00:34 UTC",
       "waarde": 997.05
     }
   ],
