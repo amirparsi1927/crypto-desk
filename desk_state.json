@@ -1,5 +1,5 @@
 {
-  "kas": 746.539117518912,
+  "kas": 496.161730677023,
   "posities": {
     "BTC/USD": {
       "aantal": 0.003020875953892924,
@@ -8,6 +8,14 @@
       "kosten": 0.9980456156020653,
       "regime": "TREND_OP",
       "tijd": "2026-10-10 03:19"
+    },
+    "ETH/USD": {
+      "aantal": 0.09995295313734259,
+      "instap": 2494.97248,
+      "stop": 2488.401428571429,
+      "kosten": 0.9975194694895977,
+      "regime": "TREND_OP",
+      "tijd": "2026-10-10 10:18"
     }
   },
   "journaal": [
@@ -26,15 +34,15 @@
   "dag": "2026-10-10",
   "dag_start": 997.0485670350304,
   "gestopt": false,
-  "laatste_ronde": "2026-10-10 09:49 UTC",
-  "waarde": 996.65,
+  "laatste_ronde": "2026-10-10 10:18 UTC",
+  "waarde": 995.28,
   "fear_greed": "neutraal (64/100)",
   "laatste_besluiten": [
     {
       "munt": "BTC/USD",
-      "prijs": 82793.3,
+      "prijs": 82752.1,
       "regime": "TREND_OP",
-      "rsi": 55.9,
+      "rsi": 57.8,
       "grok": 0,
       "grok_reden": "Gemengd nieuws: grote ETF-uitstromen, liquidaties en macrodruk, maar lichte rebound. X-sentiment niet extreem euforisch of paniekerig.",
       "sentiment": 0,
@@ -45,22 +53,22 @@
     },
     {
       "munt": "ETH/USD",
-      "prijs": 2494.39,
-      "regime": "ZIJWAARTS",
-      "rsi": 52.2,
+      "prijs": 2492.48,
+      "regime": "TREND_OP",
+      "rsi": 54.9,
       "grok": 0,
       "grok_reden": "Aanhoudende ETF-uitstromen en hoge liquidaties, prijs volgt BTC. Geen duidelijk groot nieuws of extreem X-sentiment.",
       "sentiment": 0,
-      "trader": "WACHT",
-      "trader_reden": "geen signaal",
-      "besluit": "WACHT",
-      "risk_reden": "akkoord"
+      "trader": "KOOP",
+      "trader_reden": "meegaan met trend omhoog",
+      "besluit": "KOOP",
+      "risk_reden": "akkoord: $249.13, stop $2,488.40"
     },
     {
       "munt": "SOL/USD",
-      "prijs": 109.89,
+      "prijs": 109.57,
       "regime": "TREND_NEER",
-      "rsi": 56.9,
+      "rsi": 43.0,
       "grok": 0,
       "grok_reden": "Positieve tech-updates (200ms blocks, Samsung), maar prijs licht lager en mixed transfers. Geen extreem sentiment.",
       "sentiment": 0,
@@ -71,9 +79,9 @@
     }
   ],
   "prijzen": {
-    "BTC/USD": 82793.3,
-    "ETH/USD": 2494.39,
-    "SOL/USD": 109.89
+    "BTC/USD": 82752.1,
+    "ETH/USD": 2492.48,
+    "SOL/USD": 109.57
   },
   "historie": [
     {
@@ -219,6 +227,10 @@
     {
       "tijd": "2026-10-10 09:49 UTC",
       "waarde": 996.65
+    },
+    {
+      "tijd": "2026-10-10 10:18 UTC",
+      "waarde": 995.28
     }
   ],
   "grok_cache": {
