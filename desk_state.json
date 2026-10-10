@@ -26,17 +26,17 @@
   "dag": "2026-10-10",
   "dag_start": 997.0485670350304,
   "gestopt": false,
-  "laatste_ronde": "2026-10-10 08:23 UTC",
-  "waarde": 996.48,
+  "laatste_ronde": "2026-10-10 08:49 UTC",
+  "waarde": 996.39,
   "fear_greed": "neutraal (64/100)",
   "laatste_besluiten": [
     {
       "munt": "BTC/USD",
-      "prijs": 82739.0,
+      "prijs": 82708.3,
       "regime": "TREND_OP",
-      "rsi": 57.6,
+      "rsi": 56.7,
       "grok": 0,
-      "grok_reden": "Lichte rebound na liquidaties en gemengde ETF-inflows na eerdere uitstroom, maar macrodruk van yields en olie; geen extreem X-sentiment.",
+      "grok_reden": "Gemengd: rebound na dip onder $81k en $1 mrd liquidaties, kleine ETF-instroom na eerdere uitstromen; macro-druk en Ledger-zorgen, geen extreme euforie of paniek.",
       "sentiment": 0,
       "trader": "WACHT",
       "trader_reden": "geen signaal",
@@ -45,11 +45,11 @@
     },
     {
       "munt": "ETH/USD",
-      "prijs": 2491.59,
+      "prijs": 2491.75,
       "regime": "TREND_NEER",
-      "rsi": 47.2,
+      "rsi": 47.7,
       "grok": 0,
-      "grok_reden": "Aanhoudende ETF-uitstroom (9 dagen) en relatief hoge liquidaties; prijs gemengd rond 2500 zonder duidelijk nieuws.",
+      "grok_reden": "Aanhoudende ETF-uitstromen (9 dagen) en relatief meer liquidaties dan BTC, lichte rebound; Thailand ETF positief maar niet dominant, stemming onduidelijk.",
       "sentiment": 0,
       "trader": "WACHT",
       "trader_reden": "geen signaal",
@@ -58,11 +58,11 @@
     },
     {
       "munt": "SOL/USD",
-      "prijs": 109.77,
+      "prijs": 109.8,
       "regime": "TREND_NEER",
-      "rsi": 50.3,
+      "rsi": 47.1,
       "grok": 0,
-      "grok_reden": "Positieve netwerknieuws (upgrade, hoge activiteit, partnerships) maar prijsdaling met markt en ETF-uitstroom; geen extreem sentiment.",
+      "grok_reden": "Positieve tech (200ms slots, record adressen, Samsung-partnership) maar prijs daalt met markt en ETF-uitstromen; geen extreme stemming op X.",
       "sentiment": 0,
       "trader": "WACHT",
       "trader_reden": "geen signaal",
@@ -71,9 +71,9 @@
     }
   ],
   "prijzen": {
-    "BTC/USD": 82739.0,
-    "ETH/USD": 2491.59,
-    "SOL/USD": 109.77
+    "BTC/USD": 82708.3,
+    "ETH/USD": 2491.75,
+    "SOL/USD": 109.8
   },
   "historie": [
     {
@@ -207,22 +207,26 @@
     {
       "tijd": "2026-10-10 08:23 UTC",
       "waarde": 996.48
+    },
+    {
+      "tijd": "2026-10-10 08:49 UTC",
+      "waarde": 996.39
     }
   ],
   "grok_cache": {
-    "tijd": "2026-10-10T07:47:27.330702+00:00",
+    "tijd": "2026-10-10T08:47:58.908520+00:00",
     "data": {
       "BTC/USD": [
         0,
-        "Lichte rebound na liquidaties en gemengde ETF-inflows na eerdere uitstroom, maar macrodruk van yields en olie; geen extreem X-sentiment."
+        "Gemengd: rebound na dip onder $81k en $1 mrd liquidaties, kleine ETF-instroom na eerdere uitstromen; macro-druk en Ledger-zorgen, geen extreme euforie of paniek."
       ],
       "ETH/USD": [
         0,
-        "Aanhoudende ETF-uitstroom (9 dagen) en relatief hoge liquidaties; prijs gemengd rond 2500 zonder duidelijk nieuws."
+        "Aanhoudende ETF-uitstromen (9 dagen) en relatief meer liquidaties dan BTC, lichte rebound; Thailand ETF positief maar niet dominant, stemming onduidelijk."
       ],
       "SOL/USD": [
         0,
-        "Positieve netwerknieuws (upgrade, hoge activiteit, partnerships) maar prijsdaling met markt en ETF-uitstroom; geen extreem sentiment."
+        "Positieve tech (200ms slots, record adressen, Samsung-partnership) maar prijs daalt met markt en ETF-uitstromen; geen extreme stemming op X."
       ]
     }
   }
