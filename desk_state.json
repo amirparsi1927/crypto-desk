@@ -17,18 +17,18 @@
   "dag": "2026-10-10",
   "dag_start": 997.0485670350304,
   "gestopt": false,
-  "laatste_ronde": "2026-10-10 01:59 UTC",
+  "laatste_ronde": "2026-10-10 02:22 UTC",
   "waarde": 997.05,
   "fear_greed": "neutraal (64/100)",
   "laatste_besluiten": [
     {
       "munt": "BTC/USD",
-      "prijs": 82624.5,
+      "prijs": 82581.4,
       "regime": "TREND_OP",
-      "rsi": 66.3,
-      "grok": 0,
-      "grok_reden": "ETF-uitstromen van honderden miljoenen en US-overheid verplaatst grote BTC-hoeveelheden naar exchanges, deels herstel na Trump-commentaar; X niet extreem paniekerig of euforisch.",
-      "sentiment": 0,
+      "rsi": 52.0,
+      "grok": -1,
+      "grok_reden": "Grote ETF-uitstromen van ~730 miljoen dollar in twee dagen, ruim 1 miljard dollar liquidaties (vooral longs) en dip tot 80.350 dollar.",
+      "sentiment": -1,
       "trader": "WACHT",
       "trader_reden": "geen signaal",
       "besluit": "WACHT",
@@ -36,12 +36,12 @@
     },
     {
       "munt": "ETH/USD",
-      "prijs": 2493.57,
+      "prijs": 2491.36,
       "regime": "TREND_NEER",
-      "rsi": 70.9,
-      "grok": 0,
-      "grok_reden": "Vergelijkbare ETF-uitstromen en relatief hoge liquidaties, prijsdaling; X-sentiment voorzichtig maar geen extreme paniek.",
-      "sentiment": 0,
+      "rsi": 61.8,
+      "grok": -1,
+      "grok_reden": "Achtste opeenvolgende dag ETF-uitstromen, relatief veel meer liquidaties dan BTC en duidelijkere prijsdaling.",
+      "sentiment": -1,
       "trader": "WACHT",
       "trader_reden": "geen signaal",
       "besluit": "WACHT",
@@ -49,11 +49,11 @@
     },
     {
       "munt": "SOL/USD",
-      "prijs": 109.89,
+      "prijs": 109.69,
       "regime": "TREND_NEER",
-      "rsi": 71.8,
+      "rsi": 66.3,
       "grok": 0,
-      "grok_reden": "Positieve ontwikkelingen zoals 200ms-upgrade, hoge activiteit en tokenisatie, maar prijs daalde mee met markt; geen extreme stemming op X.",
+      "grok_reden": "Prijs daalt mee met de markt en ETF-uitstromen, maar tegelijk positief nieuws over netwerk-upgrade (200ms slots) en adoptie; geen extreem X-sentiment.",
       "sentiment": 0,
       "trader": "WACHT",
       "trader_reden": "geen signaal",
@@ -62,9 +62,9 @@
     }
   ],
   "prijzen": {
-    "BTC/USD": 82624.5,
-    "ETH/USD": 2493.57,
-    "SOL/USD": 109.89
+    "BTC/USD": 82581.4,
+    "ETH/USD": 2491.36,
+    "SOL/USD": 109.69
   },
   "historie": [
     {
@@ -142,22 +142,26 @@
     {
       "tijd": "2026-10-10 01:59 UTC",
       "waarde": 997.05
+    },
+    {
+      "tijd": "2026-10-10 02:22 UTC",
+      "waarde": 997.05
     }
   ],
   "grok_cache": {
-    "tijd": "2026-10-10T01:06:07.224067+00:00",
+    "tijd": "2026-10-10T02:21:48.021321+00:00",
     "data": {
       "BTC/USD": [
-        0,
-        "ETF-uitstromen van honderden miljoenen en US-overheid verplaatst grote BTC-hoeveelheden naar exchanges, deels herstel na Trump-commentaar; X niet extreem paniekerig of euforisch."
+        -1,
+        "Grote ETF-uitstromen van ~730 miljoen dollar in twee dagen, ruim 1 miljard dollar liquidaties (vooral longs) en dip tot 80.350 dollar."
       ],
       "ETH/USD": [
-        0,
-        "Vergelijkbare ETF-uitstromen en relatief hoge liquidaties, prijsdaling; X-sentiment voorzichtig maar geen extreme paniek."
+        -1,
+        "Achtste opeenvolgende dag ETF-uitstromen, relatief veel meer liquidaties dan BTC en duidelijkere prijsdaling."
       ],
       "SOL/USD": [
         0,
-        "Positieve ontwikkelingen zoals 200ms-upgrade, hoge activiteit en tokenisatie, maar prijs daalde mee met markt; geen extreme stemming op X."
+        "Prijs daalt mee met de markt en ETF-uitstromen, maar tegelijk positief nieuws over netwerk-upgrade (200ms slots) en adoptie; geen extreem X-sentiment."
       ]
     }
   }
