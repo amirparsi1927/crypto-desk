@@ -26,15 +26,15 @@
   "dag": "2026-10-10",
   "dag_start": 997.0485670350304,
   "gestopt": false,
-  "laatste_ronde": "2026-10-10 03:51 UTC",
-  "waarde": 995.8,
+  "laatste_ronde": "2026-10-10 04:19 UTC",
+  "waarde": 996.11,
   "fear_greed": "neutraal (64/100)",
   "laatste_besluiten": [
     {
       "munt": "BTC/USD",
-      "prijs": 82514.4,
+      "prijs": 82616.0,
       "regime": "TREND_OP",
-      "rsi": 48.1,
+      "rsi": 60.4,
       "grok": -1,
       "grok_reden": "Grote ETF-uitstromen van $729M in twee dagen, $1B+ long-liquidaties en overheidsverplaatsingen van BTC naar exchanges wijzen op duidelijke verkoopdruk.",
       "sentiment": -1,
@@ -45,9 +45,9 @@
     },
     {
       "munt": "ETH/USD",
-      "prijs": 2489.04,
+      "prijs": 2492.46,
       "regime": "TREND_NEER",
-      "rsi": 53.8,
+      "rsi": 63.1,
       "grok": -1,
       "grok_reden": "Zwaardere liquidaties dan BTC ($356M vs $298M), aanhoudende ETF-uitstromen en grotere prijsdaling maken het duidelijk negatief.",
       "sentiment": -1,
@@ -58,9 +58,9 @@
     },
     {
       "munt": "SOL/USD",
-      "prijs": 109.63,
+      "prijs": 109.65,
       "regime": "TREND_NEER",
-      "rsi": 63.5,
+      "rsi": 59.5,
       "grok": 0,
       "grok_reden": "Prijsdaling en liquidaties, maar gemengd door positief nieuws over tokenized US-aandelen op Solana en 200ms-upgrade.",
       "sentiment": 0,
@@ -71,9 +71,9 @@
     }
   ],
   "prijzen": {
-    "BTC/USD": 82514.4,
-    "ETH/USD": 2489.04,
-    "SOL/USD": 109.63
+    "BTC/USD": 82616.0,
+    "ETH/USD": 2492.46,
+    "SOL/USD": 109.65
   },
   "historie": [
     {
@@ -167,6 +167,10 @@
     {
       "tijd": "2026-10-10 03:51 UTC",
       "waarde": 995.8
+    },
+    {
+      "tijd": "2026-10-10 04:19 UTC",
+      "waarde": 996.11
     }
   ],
   "grok_cache": {
