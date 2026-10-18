@@ -1,15 +1,6 @@
 {
-  "kas": 689.1537598504862,
-  "posities": {
-    "BTC/USD": {
-      "aantal": 0.0028309760043699994,
-      "instap": 81361.27999999998,
-      "stop": 80998.52857142857,
-      "kosten": 0.9213273254593148,
-      "regime": "ZIJWAARTS",
-      "tijd": "2026-10-18 14:08"
-    }
-  },
+  "kas": 917.1763465364991,
+  "posities": {},
   "journaal": [
     {
       "munt": "BTC/USD",
@@ -290,34 +281,44 @@
       "winst": -3.94,
       "regime": "TREND_OP",
       "reden": "stop-loss geraakt"
+    },
+    {
+      "munt": "BTC/USD",
+      "in": "2026-10-18 14:08",
+      "uit": "2026-10-18 15:44",
+      "instap": 81361.28,
+      "uitstap": 80869.05,
+      "winst": -3.23,
+      "regime": "ZIJWAARTS",
+      "reden": "stop-loss geraakt"
     }
   ],
   "piek": 1000.0,
   "dag": "2026-10-18",
   "dag_start": 924.343653966935,
   "gestopt": false,
-  "laatste_ronde": "2026-10-18 15:09 UTC",
-  "waarde": 918.77,
+  "laatste_ronde": "2026-10-18 15:44 UTC",
+  "waarde": 917.18,
   "fear_greed": "neutraal (53/100)",
   "laatste_besluiten": [
     {
       "munt": "BTC/USD",
-      "prijs": 81108.8,
+      "prijs": 80950.0,
       "regime": "ZIJWAARTS",
-      "rsi": 20.9,
+      "rsi": 14.2,
       "grok": 0,
       "grok_reden": "geen data",
       "sentiment": 0,
       "trader": "WACHT",
       "trader_reden": "geen signaal",
-      "besluit": "WACHT",
-      "risk_reden": "akkoord"
+      "besluit": "VERKOOP",
+      "risk_reden": "stop-loss geraakt"
     },
     {
       "munt": "ETH/USD",
-      "prijs": 2379.36,
+      "prijs": 2371.23,
       "regime": "TREND_NEER",
-      "rsi": 22.8,
+      "rsi": 13.1,
       "grok": 0,
       "grok_reden": "geen data",
       "sentiment": 0,
@@ -328,9 +329,9 @@
     },
     {
       "munt": "SOL/USD",
-      "prijs": 102.25,
+      "prijs": 101.8,
       "regime": "TREND_NEER",
-      "rsi": 27.7,
+      "rsi": 14.5,
       "grok": 0,
       "grok_reden": "geen data",
       "sentiment": 0,
@@ -341,9 +342,9 @@
     }
   ],
   "prijzen": {
-    "BTC/USD": 81108.8,
-    "ETH/USD": 2379.36,
-    "SOL/USD": 102.25
+    "BTC/USD": 80950.0,
+    "ETH/USD": 2371.23,
+    "SOL/USD": 101.8
   },
   "historie": [
     {
@@ -1929,6 +1930,10 @@
     {
       "tijd": "2026-10-18 15:09 UTC",
       "waarde": 918.77
+    },
+    {
+      "tijd": "2026-10-18 15:44 UTC",
+      "waarde": 917.18
     }
   ],
   "grok_cache": {
