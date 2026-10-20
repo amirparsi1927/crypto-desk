@@ -1,6 +1,15 @@
 {
-  "kas": 889.28839032378,
-  "posities": {},
+  "kas": 665.85379296654,
+  "posities": {
+    "SOL/USD": {
+      "aantal": 2.1047249605315255,
+      "instap": 105.73562999999999,
+      "stop": 103.77714285714285,
+      "kosten": 0.8901776787141038,
+      "regime": "TREND_OP",
+      "tijd": "2026-10-20 15:18"
+    }
+  },
   "journaal": [
     {
       "munt": "BTC/USD",
@@ -387,15 +396,15 @@
   "dag": "2026-10-20",
   "dag_start": 896.9663205532489,
   "gestopt": false,
-  "laatste_ronde": "2026-10-20 14:33 UTC",
-  "waarde": 889.29,
+  "laatste_ronde": "2026-10-20 15:18 UTC",
+  "waarde": 888.18,
   "fear_greed": "neutraal (55/100)",
   "laatste_besluiten": [
     {
       "munt": "BTC/USD",
-      "prijs": 82810.3,
+      "prijs": 82503.0,
       "regime": "ZIJWAARTS",
-      "rsi": 70.5,
+      "rsi": 63.3,
       "grok": 0,
       "grok_reden": "geen data",
       "sentiment": 0,
@@ -406,9 +415,9 @@
     },
     {
       "munt": "ETH/USD",
-      "prijs": 2455.01,
+      "prijs": 2439.33,
       "regime": "ZIJWAARTS",
-      "rsi": 78.3,
+      "rsi": 67.4,
       "grok": 0,
       "grok_reden": "geen data",
       "sentiment": 0,
@@ -419,22 +428,22 @@
     },
     {
       "munt": "SOL/USD",
-      "prijs": 107.3,
+      "prijs": 105.63,
       "regime": "TREND_OP",
-      "rsi": 79.4,
+      "rsi": 60.5,
       "grok": 0,
       "grok_reden": "geen data",
       "sentiment": 0,
-      "trader": "WACHT",
-      "trader_reden": "geen signaal",
-      "besluit": "WACHT",
-      "risk_reden": "akkoord"
+      "trader": "KOOP",
+      "trader_reden": "meegaan met trend omhoog",
+      "besluit": "KOOP",
+      "risk_reden": "akkoord: $222.32, stop $103.78"
     }
   ],
   "prijzen": {
-    "BTC/USD": 82810.3,
-    "ETH/USD": 2455.01,
-    "SOL/USD": 107.3
+    "BTC/USD": 82503.0,
+    "ETH/USD": 2439.33,
+    "SOL/USD": 105.63
   },
   "historie": [
     {
@@ -2304,6 +2313,10 @@
     {
       "tijd": "2026-10-20 14:33 UTC",
       "waarde": 889.29
+    },
+    {
+      "tijd": "2026-10-20 15:18 UTC",
+      "waarde": 888.18
     }
   ],
   "grok_cache": {
