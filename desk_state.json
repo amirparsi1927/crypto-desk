@@ -386,15 +386,15 @@
   "dag": "2026-10-20",
   "dag_start": 896.9663205532489,
   "gestopt": false,
-  "laatste_ronde": "2026-10-20 06:06 UTC",
-  "waarde": 890.76,
+  "laatste_ronde": "2026-10-20 07:04 UTC",
+  "waarde": 891.26,
   "fear_greed": "neutraal (55/100)",
   "laatste_besluiten": [
     {
       "munt": "BTC/USD",
-      "prijs": 81571.4,
+      "prijs": 81727.7,
       "regime": "TREND_NEER",
-      "rsi": 52.6,
+      "rsi": 40.1,
       "grok": 0,
       "grok_reden": "geen data",
       "sentiment": 0,
@@ -405,9 +405,9 @@
     },
     {
       "munt": "ETH/USD",
-      "prijs": 2391.93,
+      "prijs": 2394.11,
       "regime": "TREND_NEER",
-      "rsi": 50.1,
+      "rsi": 34.9,
       "grok": 0,
       "grok_reden": "geen data",
       "sentiment": 0,
@@ -418,9 +418,9 @@
     },
     {
       "munt": "SOL/USD",
-      "prijs": 104.33,
+      "prijs": 104.56,
       "regime": "TREND_OP",
-      "rsi": 40.3,
+      "rsi": 35.6,
       "grok": 0,
       "grok_reden": "geen data",
       "sentiment": 0,
@@ -431,9 +431,9 @@
     }
   ],
   "prijzen": {
-    "BTC/USD": 81571.4,
-    "ETH/USD": 2391.93,
-    "SOL/USD": 104.33
+    "BTC/USD": 81727.7,
+    "ETH/USD": 2394.11,
+    "SOL/USD": 104.56
   },
   "historie": [
     {
@@ -2259,6 +2259,10 @@
     {
       "tijd": "2026-10-20 06:06 UTC",
       "waarde": 890.76
+    },
+    {
+      "tijd": "2026-10-20 07:04 UTC",
+      "waarde": 891.26
     }
   ],
   "grok_cache": {
