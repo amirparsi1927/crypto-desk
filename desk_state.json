@@ -363,18 +363,18 @@
     }
   ],
   "piek": 1000.0,
-  "dag": "2026-10-19",
-  "dag_start": 914.3783762188596,
+  "dag": "2026-10-20",
+  "dag_start": 896.9663205532489,
   "gestopt": false,
-  "laatste_ronde": "2026-10-19 23:30 UTC",
-  "waarde": 897.03,
-  "fear_greed": "neutraal (59/100)",
+  "laatste_ronde": "2026-10-20 00:00 UTC",
+  "waarde": 896.97,
+  "fear_greed": "neutraal (55/100)",
   "laatste_besluiten": [
     {
       "munt": "BTC/USD",
-      "prijs": 81931.0,
+      "prijs": 81882.6,
       "regime": "TREND_OP",
-      "rsi": 52.7,
+      "rsi": 48.0,
       "grok": 0,
       "grok_reden": "geen data",
       "sentiment": 0,
@@ -385,9 +385,9 @@
     },
     {
       "munt": "ETH/USD",
-      "prijs": 2405.2,
+      "prijs": 2405.18,
       "regime": "TREND_OP",
-      "rsi": 62.5,
+      "rsi": 58.1,
       "grok": 0,
       "grok_reden": "geen data",
       "sentiment": 0,
@@ -398,22 +398,22 @@
     },
     {
       "munt": "SOL/USD",
-      "prijs": 104.98,
+      "prijs": 104.95,
       "regime": "TREND_OP",
-      "rsi": 68.8,
+      "rsi": 64.8,
       "grok": 0,
       "grok_reden": "geen data",
       "sentiment": 0,
-      "trader": "KOOP",
-      "trader_reden": "meegaan met trend omhoog",
-      "besluit": "KOOP",
-      "risk_reden": "akkoord: $224.54, stop $104.43"
+      "trader": "WACHT",
+      "trader_reden": "geen signaal",
+      "besluit": "WACHT",
+      "risk_reden": "akkoord"
     }
   ],
   "prijzen": {
-    "BTC/USD": 81931.0,
-    "ETH/USD": 2405.2,
-    "SOL/USD": 104.98
+    "BTC/USD": 81882.6,
+    "ETH/USD": 2405.18,
+    "SOL/USD": 104.95
   },
   "historie": [
     {
@@ -2199,6 +2199,10 @@
     {
       "tijd": "2026-10-19 23:30 UTC",
       "waarde": 897.03
+    },
+    {
+      "tijd": "2026-10-20 00:00 UTC",
+      "waarde": 896.97
     }
   ],
   "grok_cache": {
