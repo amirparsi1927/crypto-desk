@@ -442,54 +442,54 @@
   "dag": "2026-10-21",
   "dag_start": 890.5485103022409,
   "gestopt": false,
-  "laatste_ronde": "2026-10-21 10:51 UTC",
-  "waarde": 879.38,
+  "laatste_ronde": "2026-10-21 11:33 UTC",
+  "waarde": 880.62,
   "fear_greed": "neutraal (63/100)",
   "laatste_besluiten": [
     {
       "munt": "BTC/USD",
-      "prijs": 83332.5,
+      "prijs": 83403.1,
       "regime": "TREND_OP",
-      "rsi": 63.2,
+      "rsi": 62.1,
       "grok": 0,
       "grok_reden": "geen data",
       "sentiment": 0,
-      "trader": "KOOP",
-      "trader_reden": "meegaan met trend omhoog",
-      "besluit": "KOOP",
-      "risk_reden": "akkoord: $220.67, stop $82,936.33"
+      "trader": "WACHT",
+      "trader_reden": "geen signaal",
+      "besluit": "WACHT",
+      "risk_reden": "akkoord"
     },
     {
       "munt": "ETH/USD",
-      "prijs": 2455.05,
+      "prijs": 2460.97,
       "regime": "TREND_OP",
-      "rsi": 55.4,
+      "rsi": 58.7,
       "grok": 0,
       "grok_reden": "geen data",
       "sentiment": 0,
-      "trader": "KOOP",
-      "trader_reden": "meegaan met trend omhoog",
-      "besluit": "KOOP",
-      "risk_reden": "akkoord: $220.67, stop $2,440.70"
+      "trader": "WACHT",
+      "trader_reden": "geen signaal",
+      "besluit": "WACHT",
+      "risk_reden": "akkoord"
     },
     {
       "munt": "SOL/USD",
-      "prijs": 106.51,
+      "prijs": 106.76,
       "regime": "TREND_OP",
-      "rsi": 47.5,
+      "rsi": 54.1,
       "grok": 0,
       "grok_reden": "geen data",
       "sentiment": 0,
-      "trader": "KOOP",
-      "trader_reden": "meegaan met trend omhoog",
-      "besluit": "KOOP",
-      "risk_reden": "akkoord: $220.67, stop $105.79"
+      "trader": "WACHT",
+      "trader_reden": "geen signaal",
+      "besluit": "WACHT",
+      "risk_reden": "akkoord"
     }
   ],
   "prijzen": {
-    "BTC/USD": 83332.5,
-    "ETH/USD": 2455.05,
-    "SOL/USD": 106.51
+    "BTC/USD": 83403.1,
+    "ETH/USD": 2460.97,
+    "SOL/USD": 106.76
   },
   "historie": [
     {
@@ -2475,6 +2475,10 @@
     {
       "tijd": "2026-10-21 10:51 UTC",
       "waarde": 879.38
+    },
+    {
+      "tijd": "2026-10-21 11:33 UTC",
+      "waarde": 880.62
     }
   ],
   "grok_cache": {
