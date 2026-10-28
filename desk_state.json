@@ -536,55 +536,55 @@
   "piek": 1000.0,
   "dag": "2026-10-28",
   "dag_start": 854.9856301953457,
-  "gestopt": false,
-  "laatste_ronde": "2026-10-28 15:23 UTC",
+  "gestopt": true,
+  "laatste_ronde": "2026-10-28 16:25 UTC",
   "waarde": 849.18,
   "fear_greed": "neutraal (51/100)",
   "laatste_besluiten": [
     {
       "munt": "BTC/USD",
-      "prijs": 80611.2,
+      "prijs": 80378.2,
       "regime": "TREND_OP",
-      "rsi": 26.9,
+      "rsi": 36.4,
       "grok": 0,
       "grok_reden": "geen data",
       "sentiment": 0,
-      "trader": "VERKOOP",
-      "trader_reden": "trend verzwakt",
-      "besluit": "VERKOOP",
-      "risk_reden": "akkoord"
+      "trader": "WACHT",
+      "trader_reden": "geen signaal",
+      "besluit": "WACHT",
+      "risk_reden": "\ud83d\udea8 noodknop actief"
     },
     {
       "munt": "ETH/USD",
-      "prijs": 2336.36,
-      "regime": "TREND_OP",
-      "rsi": 27.3,
+      "prijs": 2328.57,
+      "regime": "ZIJWAARTS",
+      "rsi": 36.2,
       "grok": 0,
       "grok_reden": "geen data",
       "sentiment": 0,
       "trader": "WACHT",
       "trader_reden": "geen signaal",
       "besluit": "WACHT",
-      "risk_reden": "akkoord"
+      "risk_reden": "\ud83d\udea8 noodknop actief"
     },
     {
       "munt": "SOL/USD",
-      "prijs": 101.07,
-      "regime": "TREND_OP",
-      "rsi": 28.3,
+      "prijs": 100.81,
+      "regime": "ZIJWAARTS",
+      "rsi": 37.3,
       "grok": 0,
       "grok_reden": "geen data",
       "sentiment": 0,
       "trader": "WACHT",
       "trader_reden": "geen signaal",
       "besluit": "WACHT",
-      "risk_reden": "akkoord"
+      "risk_reden": "\ud83d\udea8 noodknop actief"
     }
   ],
   "prijzen": {
-    "BTC/USD": 80611.2,
-    "ETH/USD": 2336.36,
-    "SOL/USD": 101.07
+    "BTC/USD": 80378.2,
+    "ETH/USD": 2328.57,
+    "SOL/USD": 100.81
   },
   "historie": [
     {
@@ -3537,6 +3537,10 @@
     },
     {
       "tijd": "2026-10-28 15:23 UTC",
+      "waarde": 849.18
+    },
+    {
+      "tijd": "2026-10-28 16:25 UTC",
       "waarde": 849.18
     }
   ],
