@@ -537,54 +537,54 @@
   "dag": "2026-10-29",
   "dag_start": 849.1835268885463,
   "gestopt": true,
-  "laatste_ronde": "2026-10-29 04:19 UTC",
+  "laatste_ronde": "2026-10-29 05:17 UTC",
   "waarde": 849.18,
   "fear_greed": "neutraal (51/100)",
   "laatste_besluiten": [
     {
       "munt": "BTC/USD",
-      "prijs": 79809.9,
+      "prijs": 80363.5,
       "regime": "ZIJWAARTS",
-      "rsi": 19.3,
+      "rsi": 65.5,
       "grok": 0,
       "grok_reden": "geen data",
       "sentiment": 0,
-      "trader": "KOOP",
-      "trader_reden": "goedkoop in zijwaartse markt",
+      "trader": "WACHT",
+      "trader_reden": "geen signaal",
       "besluit": "WACHT",
       "risk_reden": "\ud83d\udea8 noodknop actief"
     },
     {
       "munt": "ETH/USD",
-      "prijs": 2308.3,
+      "prijs": 2329.45,
       "regime": "ZIJWAARTS",
-      "rsi": 23.3,
+      "rsi": 64.4,
       "grok": 0,
       "grok_reden": "geen data",
       "sentiment": 0,
-      "trader": "KOOP",
-      "trader_reden": "goedkoop in zijwaartse markt",
+      "trader": "WACHT",
+      "trader_reden": "geen signaal",
       "besluit": "WACHT",
       "risk_reden": "\ud83d\udea8 noodknop actief"
     },
     {
       "munt": "SOL/USD",
-      "prijs": 99.64,
+      "prijs": 100.54,
       "regime": "ZIJWAARTS",
-      "rsi": 21.9,
+      "rsi": 66.0,
       "grok": 0,
       "grok_reden": "geen data",
       "sentiment": 0,
-      "trader": "KOOP",
-      "trader_reden": "goedkoop in zijwaartse markt",
+      "trader": "WACHT",
+      "trader_reden": "geen signaal",
       "besluit": "WACHT",
       "risk_reden": "\ud83d\udea8 noodknop actief"
     }
   ],
   "prijzen": {
-    "BTC/USD": 79809.9,
-    "ETH/USD": 2308.3,
-    "SOL/USD": 99.64
+    "BTC/USD": 80363.5,
+    "ETH/USD": 2329.45,
+    "SOL/USD": 100.54
   },
   "historie": [
     {
@@ -3597,6 +3597,10 @@
     },
     {
       "tijd": "2026-10-29 04:19 UTC",
+      "waarde": 849.18
+    },
+    {
+      "tijd": "2026-10-29 05:17 UTC",
       "waarde": 849.18
     }
   ],
