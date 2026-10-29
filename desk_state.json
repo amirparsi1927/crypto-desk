@@ -537,15 +537,15 @@
   "dag": "2026-10-29",
   "dag_start": 849.1835268885463,
   "gestopt": true,
-  "laatste_ronde": "2026-10-29 00:17 UTC",
+  "laatste_ronde": "2026-10-29 01:33 UTC",
   "waarde": 849.18,
   "fear_greed": "neutraal (51/100)",
   "laatste_besluiten": [
     {
       "munt": "BTC/USD",
-      "prijs": 81184.0,
+      "prijs": 80650.1,
       "regime": "TREND_OP",
-      "rsi": 44.1,
+      "rsi": 13.1,
       "grok": 0,
       "grok_reden": "geen data",
       "sentiment": 0,
@@ -556,35 +556,35 @@
     },
     {
       "munt": "ETH/USD",
-      "prijs": 2354.77,
-      "regime": "TREND_OP",
-      "rsi": 43.2,
+      "prijs": 2337.02,
+      "regime": "ZIJWAARTS",
+      "rsi": 17.1,
       "grok": 0,
       "grok_reden": "geen data",
       "sentiment": 0,
       "trader": "KOOP",
-      "trader_reden": "meegaan met trend omhoog",
+      "trader_reden": "goedkoop in zijwaartse markt",
       "besluit": "WACHT",
       "risk_reden": "\ud83d\udea8 noodknop actief"
     },
     {
       "munt": "SOL/USD",
-      "prijs": 102.3,
-      "regime": "TREND_OP",
-      "rsi": 45.2,
+      "prijs": 101.11,
+      "regime": "ZIJWAARTS",
+      "rsi": 12.1,
       "grok": 0,
       "grok_reden": "geen data",
       "sentiment": 0,
       "trader": "KOOP",
-      "trader_reden": "meegaan met trend omhoog",
+      "trader_reden": "goedkoop in zijwaartse markt",
       "besluit": "WACHT",
       "risk_reden": "\ud83d\udea8 noodknop actief"
     }
   ],
   "prijzen": {
-    "BTC/USD": 81184.0,
-    "ETH/USD": 2354.77,
-    "SOL/USD": 102.3
+    "BTC/USD": 80650.1,
+    "ETH/USD": 2337.02,
+    "SOL/USD": 101.11
   },
   "historie": [
     {
@@ -3581,6 +3581,10 @@
     },
     {
       "tijd": "2026-10-29 00:17 UTC",
+      "waarde": 849.18
+    },
+    {
+      "tijd": "2026-10-29 01:33 UTC",
       "waarde": 849.18
     }
   ],
