@@ -537,54 +537,54 @@
   "dag": "2026-11-05",
   "dag_start": 849.1835268885463,
   "gestopt": true,
-  "laatste_ronde": "2026-11-05 18:00 UTC",
+  "laatste_ronde": "2026-11-05 18:55 UTC",
   "waarde": 849.18,
   "fear_greed": "neutraal (50/100)",
   "laatste_besluiten": [
     {
       "munt": "BTC/USD",
-      "prijs": 75725.8,
-      "regime": "ZIJWAARTS",
-      "rsi": 18.5,
+      "prijs": 76090.2,
+      "regime": "TREND_NEER",
+      "rsi": 45.3,
       "grok": 0,
       "grok_reden": "geen data",
       "sentiment": 0,
-      "trader": "KOOP",
-      "trader_reden": "goedkoop in zijwaartse markt",
+      "trader": "WACHT",
+      "trader_reden": "geen signaal",
       "besluit": "WACHT",
       "risk_reden": "\ud83d\udea8 noodknop actief"
     },
     {
       "munt": "ETH/USD",
-      "prijs": 2248.01,
+      "prijs": 2251.13,
       "regime": "ZIJWAARTS",
-      "rsi": 18.6,
+      "rsi": 38.8,
       "grok": 0,
       "grok_reden": "geen data",
       "sentiment": 0,
-      "trader": "KOOP",
-      "trader_reden": "goedkoop in zijwaartse markt",
+      "trader": "WACHT",
+      "trader_reden": "geen signaal",
       "besluit": "WACHT",
       "risk_reden": "\ud83d\udea8 noodknop actief"
     },
     {
       "munt": "SOL/USD",
-      "prijs": 88.84,
-      "regime": "ZIJWAARTS",
-      "rsi": 17.0,
+      "prijs": 89.72,
+      "regime": "TREND_NEER",
+      "rsi": 38.3,
       "grok": 0,
       "grok_reden": "geen data",
       "sentiment": 0,
-      "trader": "KOOP",
-      "trader_reden": "goedkoop in zijwaartse markt",
+      "trader": "WACHT",
+      "trader_reden": "geen signaal",
       "besluit": "WACHT",
       "risk_reden": "\ud83d\udea8 noodknop actief"
     }
   ],
   "prijzen": {
-    "BTC/USD": 75725.8,
-    "ETH/USD": 2248.01,
-    "SOL/USD": 88.84
+    "BTC/USD": 76090.2,
+    "ETH/USD": 2251.13,
+    "SOL/USD": 89.72
   },
   "historie": [
     {
@@ -4369,6 +4369,10 @@
     },
     {
       "tijd": "2026-11-05 18:00 UTC",
+      "waarde": 849.18
+    },
+    {
+      "tijd": "2026-11-05 18:55 UTC",
       "waarde": 849.18
     }
   ],
