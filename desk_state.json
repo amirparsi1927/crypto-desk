@@ -537,54 +537,54 @@
   "dag": "2026-11-05",
   "dag_start": 849.1835268885463,
   "gestopt": true,
-  "laatste_ronde": "2026-11-05 13:49 UTC",
+  "laatste_ronde": "2026-11-05 14:55 UTC",
   "waarde": 849.18,
   "fear_greed": "neutraal (50/100)",
   "laatste_besluiten": [
     {
       "munt": "BTC/USD",
-      "prijs": 79782.1,
-      "regime": "TREND_OP",
-      "rsi": 26.7,
+      "prijs": 78431.9,
+      "regime": "ZIJWAARTS",
+      "rsi": 12.9,
       "grok": 0,
       "grok_reden": "geen data",
       "sentiment": 0,
-      "trader": "WACHT",
-      "trader_reden": "geen signaal",
+      "trader": "KOOP",
+      "trader_reden": "goedkoop in zijwaartse markt",
       "besluit": "WACHT",
       "risk_reden": "\ud83d\udea8 noodknop actief"
     },
     {
       "munt": "ETH/USD",
-      "prijs": 2390.86,
-      "regime": "TREND_OP",
-      "rsi": 20.4,
+      "prijs": 2345.02,
+      "regime": "ZIJWAARTS",
+      "rsi": 10.5,
       "grok": 0,
       "grok_reden": "geen data",
       "sentiment": 0,
-      "trader": "WACHT",
-      "trader_reden": "geen signaal",
+      "trader": "KOOP",
+      "trader_reden": "goedkoop in zijwaartse markt",
       "besluit": "WACHT",
       "risk_reden": "\ud83d\udea8 noodknop actief"
     },
     {
       "munt": "SOL/USD",
-      "prijs": 95.48,
-      "regime": "TREND_OP",
-      "rsi": 21.0,
+      "prijs": 93.06,
+      "regime": "ZIJWAARTS",
+      "rsi": 11.9,
       "grok": 0,
       "grok_reden": "geen data",
       "sentiment": 0,
-      "trader": "WACHT",
-      "trader_reden": "geen signaal",
+      "trader": "KOOP",
+      "trader_reden": "goedkoop in zijwaartse markt",
       "besluit": "WACHT",
       "risk_reden": "\ud83d\udea8 noodknop actief"
     }
   ],
   "prijzen": {
-    "BTC/USD": 79782.1,
-    "ETH/USD": 2390.86,
-    "SOL/USD": 95.48
+    "BTC/USD": 78431.9,
+    "ETH/USD": 2345.02,
+    "SOL/USD": 93.06
   },
   "historie": [
     {
@@ -4353,6 +4353,10 @@
     },
     {
       "tijd": "2026-11-05 13:49 UTC",
+      "waarde": 849.18
+    },
+    {
+      "tijd": "2026-11-05 14:55 UTC",
       "waarde": 849.18
     }
   ],
