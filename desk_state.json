@@ -537,15 +537,15 @@
   "dag": "2026-11-19",
   "dag_start": 849.1835268885463,
   "gestopt": true,
-  "laatste_ronde": "2026-11-19 04:14 UTC",
+  "laatste_ronde": "2026-11-19 13:30 UTC",
   "waarde": 849.18,
   "fear_greed": "extreme angst (10/100)",
   "laatste_besluiten": [
     {
       "munt": "BTC/USD",
-      "prijs": 63285.6,
+      "prijs": 63639.8,
       "regime": "TREND_NEER",
-      "rsi": 54.5,
+      "rsi": 44.9,
       "grok": 0,
       "grok_reden": "geen data",
       "sentiment": 1,
@@ -556,35 +556,35 @@
     },
     {
       "munt": "ETH/USD",
-      "prijs": 1795.98,
-      "regime": "TREND_NEER",
-      "rsi": 61.5,
+      "prijs": 1802.57,
+      "regime": "TREND_OP",
+      "rsi": 48.0,
       "grok": 0,
       "grok_reden": "geen data",
       "sentiment": 1,
-      "trader": "WACHT",
-      "trader_reden": "geen signaal",
+      "trader": "KOOP",
+      "trader_reden": "meegaan met trend omhoog",
       "besluit": "WACHT",
       "risk_reden": "\ud83d\udea8 noodknop actief"
     },
     {
       "munt": "SOL/USD",
-      "prijs": 74.25,
-      "regime": "ZIJWAARTS",
-      "rsi": 60.6,
+      "prijs": 74.77,
+      "regime": "TREND_OP",
+      "rsi": 60.1,
       "grok": 0,
       "grok_reden": "geen data",
       "sentiment": 1,
-      "trader": "WACHT",
-      "trader_reden": "geen signaal",
+      "trader": "KOOP",
+      "trader_reden": "meegaan met trend omhoog",
       "besluit": "WACHT",
       "risk_reden": "\ud83d\udea8 noodknop actief"
     }
   ],
   "prijzen": {
-    "BTC/USD": 63285.6,
-    "ETH/USD": 1795.98,
-    "SOL/USD": 74.25
+    "BTC/USD": 63639.8,
+    "ETH/USD": 1802.57,
+    "SOL/USD": 74.77
   },
   "historie": [
     {
@@ -4633,6 +4633,10 @@
     },
     {
       "tijd": "2026-11-19 04:14 UTC",
+      "waarde": 849.18
+    },
+    {
+      "tijd": "2026-11-19 13:30 UTC",
       "waarde": 849.18
     }
   ],
