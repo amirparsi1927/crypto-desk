@@ -537,28 +537,15 @@
   "dag": "2026-11-22",
   "dag_start": 849.1835268885463,
   "gestopt": true,
-  "laatste_ronde": "2026-11-22 16:41 UTC",
+  "laatste_ronde": "2026-11-22 22:09 UTC",
   "waarde": 849.18,
   "fear_greed": "extreme angst (11/100)",
   "laatste_besluiten": [
     {
       "munt": "BTC/USD",
-      "prijs": 61233.1,
+      "prijs": 60785.7,
       "regime": "TREND_OP",
-      "rsi": 68.7,
-      "grok": 0,
-      "grok_reden": "geen data",
-      "sentiment": 1,
-      "trader": "KOOP",
-      "trader_reden": "meegaan met trend omhoog",
-      "besluit": "WACHT",
-      "risk_reden": "\ud83d\udea8 noodknop actief"
-    },
-    {
-      "munt": "ETH/USD",
-      "prijs": 1720.67,
-      "regime": "TREND_OP",
-      "rsi": 71.0,
+      "rsi": 59.4,
       "grok": 0,
       "grok_reden": "geen data",
       "sentiment": 1,
@@ -568,10 +555,10 @@
       "risk_reden": "\ud83d\udea8 noodknop actief"
     },
     {
-      "munt": "SOL/USD",
-      "prijs": 70.54,
+      "munt": "ETH/USD",
+      "prijs": 1713.58,
       "regime": "TREND_OP",
-      "rsi": 61.5,
+      "rsi": 52.3,
       "grok": 0,
       "grok_reden": "geen data",
       "sentiment": 1,
@@ -579,12 +566,25 @@
       "trader_reden": "meegaan met trend omhoog",
       "besluit": "WACHT",
       "risk_reden": "\ud83d\udea8 noodknop actief"
+    },
+    {
+      "munt": "SOL/USD",
+      "prijs": 70.29,
+      "regime": "TREND_OP",
+      "rsi": 51.4,
+      "grok": 0,
+      "grok_reden": "geen data",
+      "sentiment": 1,
+      "trader": "WACHT",
+      "trader_reden": "geen signaal",
+      "besluit": "WACHT",
+      "risk_reden": "\ud83d\udea8 noodknop actief"
     }
   ],
   "prijzen": {
-    "BTC/USD": 61233.1,
-    "ETH/USD": 1720.67,
-    "SOL/USD": 70.54
+    "BTC/USD": 60785.7,
+    "ETH/USD": 1713.58,
+    "SOL/USD": 70.29
   },
   "historie": [
     {
@@ -4681,6 +4681,10 @@
     },
     {
       "tijd": "2026-11-22 16:41 UTC",
+      "waarde": 849.18
+    },
+    {
+      "tijd": "2026-11-22 22:09 UTC",
       "waarde": 849.18
     }
   ],
