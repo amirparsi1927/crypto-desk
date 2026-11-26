@@ -534,57 +534,57 @@
     }
   ],
   "piek": 1000.0,
-  "dag": "2026-11-25",
+  "dag": "2026-11-26",
   "dag_start": 849.1835268885463,
   "gestopt": true,
-  "laatste_ronde": "2026-11-25 22:49 UTC",
+  "laatste_ronde": "2026-11-26 04:54 UTC",
   "waarde": 849.18,
-  "fear_greed": "extreme angst (13/100)",
+  "fear_greed": "extreme angst (11/100)",
   "laatste_besluiten": [
     {
       "munt": "BTC/USD",
-      "prijs": 60111.9,
-      "regime": "ZIJWAARTS",
-      "rsi": 48.8,
+      "prijs": 60901.3,
+      "regime": "TREND_OP",
+      "rsi": 59.0,
       "grok": 0,
       "grok_reden": "geen data",
       "sentiment": 1,
-      "trader": "WACHT",
-      "trader_reden": "geen signaal",
+      "trader": "KOOP",
+      "trader_reden": "meegaan met trend omhoog",
       "besluit": "WACHT",
       "risk_reden": "\ud83d\udea8 noodknop actief"
     },
     {
       "munt": "ETH/USD",
-      "prijs": 1686.2,
-      "regime": "ZIJWAARTS",
-      "rsi": 43.5,
+      "prijs": 1701.14,
+      "regime": "TREND_OP",
+      "rsi": 52.5,
       "grok": 0,
       "grok_reden": "geen data",
       "sentiment": 1,
-      "trader": "WACHT",
-      "trader_reden": "geen signaal",
+      "trader": "KOOP",
+      "trader_reden": "meegaan met trend omhoog",
       "besluit": "WACHT",
       "risk_reden": "\ud83d\udea8 noodknop actief"
     },
     {
       "munt": "SOL/USD",
-      "prijs": 70.5,
-      "regime": "ZIJWAARTS",
-      "rsi": 45.2,
+      "prijs": 71.06,
+      "regime": "TREND_OP",
+      "rsi": 56.3,
       "grok": 0,
       "grok_reden": "geen data",
       "sentiment": 1,
-      "trader": "WACHT",
-      "trader_reden": "geen signaal",
+      "trader": "KOOP",
+      "trader_reden": "meegaan met trend omhoog",
       "besluit": "WACHT",
       "risk_reden": "\ud83d\udea8 noodknop actief"
     }
   ],
   "prijzen": {
-    "BTC/USD": 60111.9,
-    "ETH/USD": 1686.2,
-    "SOL/USD": 70.5
+    "BTC/USD": 60901.3,
+    "ETH/USD": 1701.14,
+    "SOL/USD": 71.06
   },
   "historie": [
     {
@@ -4717,6 +4717,10 @@
     },
     {
       "tijd": "2026-11-25 22:49 UTC",
+      "waarde": 849.18
+    },
+    {
+      "tijd": "2026-11-26 04:54 UTC",
       "waarde": 849.18
     }
   ],
